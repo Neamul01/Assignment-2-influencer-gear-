@@ -101,9 +101,9 @@ nav {
 
 }
 
+/* animation start */
 .banner-text a:hover {
     animation: model 2s ease-in-out;
-    /* animation-duration: 2s; */
 }
 
 @keyframes model {
@@ -120,6 +120,8 @@ nav {
         left: 0px;
     }
 }
+
+/* animation end  */
 
 .banner-text a i {
     margin-left: 10px;
@@ -139,6 +141,8 @@ nav {
     transition: all 0.2s ease-in-out;
 
 }
+
+/* transformation  */
 
 .banner-image:hover {
     transform: scaleX(1.2);
