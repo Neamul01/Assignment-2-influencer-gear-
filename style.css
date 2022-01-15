@@ -3,6 +3,10 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
+.container {
+    width: 1200px;
+}
+
 /*---------------------
  navigation menu 
 --------------------- */
@@ -10,14 +14,13 @@ body {
 header {
     display: flex;
     justify-content: center;
+
 }
 
 nav {
-    width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: aqua;
 }
 
 .site-title {
@@ -52,4 +55,85 @@ nav {
     padding: 5px;
     margin-left: 20px;
 
+}
+
+
+/*---------------------
+ hero area 
+--------------------- */
+
+.hero-area {
+    margin-top: 40px;
+}
+
+.hero-banner {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 5em;
+}
+
+.banner-text>h1 {
+    font-size: 52px;
+    margin: 20px 0;
+}
+
+.banner-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+
+}
+
+.banner-text a {
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: #fff;
+    padding: 5px 25px 5px 30px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.banner-text a i {
+
+    margin-left: 10px;
+}
+
+.banner-image {
+    width: 42%;
+    margin-right: 30px;
+    background-image: url(images/Circle\ design.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+/* hero sites */
+
+.hero-sites ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+.hero-sites ul li {
+    list-style: none;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+
+
+}
+
+.vector-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 20px;
 }
