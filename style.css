@@ -137,3 +137,21 @@ nav {
     height: 100px;
     margin: 0 20px;
 }
+
+
+/*---------------------
+collection area 
+--------------------- */
+.collection-area {
+    display: flex;
+    justify-content: center;
+}
+
+.collection-intems {
+    display: grid;
+}
+
+.collection-item {
+    width: 329px;
+    height: 476px;
+}
