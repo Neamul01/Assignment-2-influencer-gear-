@@ -117,6 +117,9 @@ nav {
 }
 
 /* hero sites */
+.hero-sites {
+    margin-top: 60px;
+}
 
 .hero-sites ul {
     display: flex;
