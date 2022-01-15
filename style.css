@@ -109,17 +109,21 @@ nav {
     background-image: url(images/Circle\ design.svg);
     background-position: center;
     background-size: cover;
-    position: relative;
-    animation: 1s linear 1s infinite alternate slidein;
+    /* position: relative; */
+    /* animation: 1s linear 1s infinite alternate slidein; */
+    transition: transform 2s;
+
 }
 
+.banner-image :hover img {
+    transform: rotate(360deg) scale(20px);
+}
 
 .banner-image img {
     width: 100%;
-
 }
 
-@keyframes animation {
+/* @keyframes animation {
     from {
         left: -50px;
     }
@@ -127,7 +131,7 @@ nav {
     to {
         left: 0px;
     }
-}
+} */
 
 /* hero sites */
 .hero-sites {
