@@ -240,6 +240,53 @@ collection area
     padding-left: 5px;
 }
 
+/* /*-----------------------
+ May you like area
+--------------------------- */
+.you-like {
+    margin-bottom: 50px;
+}
+
+.you-like span {
+    color: #E02C6D;
+}
+
+.you-like>h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.like-products {
+    display: flex;
+    justify-content: center;
+
+}
+
+.like-product {
+    margin: 10px;
+    padding: 17px 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px grey;
+}
+
+.like-product img {
+    border-radius: 5px;
+}
+
+.like-product h2 {
+    font-size: 22px;
+    margin: 16px 0 0 0;
+}
+
+.like-product h3 {
+    font-size: 19px;
+    margin: 6px 0 6px 0;
+}
+
+.like-hide-product {
+    display: none;
+}
 
 /*------------------
  footer area 
@@ -276,7 +323,6 @@ footer {
 }
 
 
-
 /*-----------------------
  media query
 ---------------------- */
@@ -303,6 +349,14 @@ footer {
     .collection-intems {
         grid-template-columns: 1fr;
     }
+
+    .like-products {
+        flex-wrap: wrap;
+    }
+
+    .like-hide-product {
+        display: block;
+    }
 }
 
 /* tablet device */
@@ -314,5 +368,13 @@ footer {
 
     .collection-intems {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .like-products {
+        flex-wrap: wrap;
+    }
+
+    .like-hide-product {
+        display: block;
     }
 }
