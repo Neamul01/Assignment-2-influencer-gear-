@@ -182,7 +182,11 @@ collection area
 
 .collection-item h3 {
     font-size: 19px;
-    margin: 6px 0 0 0;
+    margin: 6px 0 6px 0;
+}
+
+.stars {
+    font-size: 12px;
 }
 
 .filled-star, .half-filled-star {
@@ -191,6 +195,7 @@ collection area
 
 .item-info p {
     font-size: 14px;
+    margin-top: 7px;
 }
 
 .collections>a {
