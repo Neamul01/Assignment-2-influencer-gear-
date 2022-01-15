@@ -145,13 +145,94 @@ collection area
 .collection-area {
     display: flex;
     justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.collections>h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
 }
 
 .collection-intems {
     display: grid;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
 
 .collection-item {
-    width: 329px;
-    height: 476px;
+    font-family: 'Merriweather', serif;
+    width: 300px;
+    padding: 17px 14px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 35px grey;
+
+}
+
+.collection-item h2 {
+    font-size: 22px;
+    margin: 16px 0 0 0;
+}
+
+.collection-item h3 {
+    font-size: 19px;
+    margin: 6px 0 0 0;
+}
+
+.filled-star, .half-filled-star {
+    color: #FB8200;
+}
+
+.item-info p {
+    font-size: 14px;
+}
+
+.collections>a {
+    color: #E02C6D;
+    margin-top: 50px;
+    float: right;
+    text-decoration: none;
+
+}
+
+.collections>a>span {
+    padding-left: 5px;
+}
+
+
+/*------------------
+ footer area 
+------------------ */
+
+footer {
+    background-color: #0A0826;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.footer h3 {
+    margin: 3px;
+    word-spacing: 1.5px;
+    letter-spacing: 1px;
+}
+
+
+.copyright {
+    margin: 3px 17px;
+    font-size: 14px;
+}
+
+.footer-icon i {
+    margin-left: 24px;
+    font-size: 18px;
 }
