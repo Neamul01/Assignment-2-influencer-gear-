@@ -100,20 +100,33 @@ nav {
 }
 
 .banner-text a i {
-
     margin-left: 10px;
 }
 
 .banner-image {
-    width: 42%;
+    max-width: 42%;
     margin-right: 30px;
     background-image: url(images/Circle\ design.svg);
     background-position: center;
     background-size: cover;
+    position: relative;
+    animation: 1s linear 1s infinite alternate slidein;
 }
+
 
 .banner-image img {
     width: 100%;
+
+}
+
+@keyframes animation {
+    from {
+        left: -50px;
+    }
+
+    to {
+        left: 0px;
+    }
 }
 
 /* hero sites */
@@ -243,4 +256,46 @@ footer {
 .footer-icon i {
     margin-left: 24px;
     font-size: 18px;
+}
+
+
+
+/*-----------------------
+ media query
+---------------------- */
+
+/* mobile device */
+@media only screen and (max-width :688px) {
+    .site-nav ul {
+        display: none;
+    }
+
+    .banner-content {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .banner-text>h1 {
+        font-size: 40px;
+    }
+
+    .hero-sites ul {
+        flex-wrap: wrap;
+    }
+
+    .collection-intems {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* tablet device */
+
+@media only screen and (min-width :699px) and (max-width :992px) {
+    .hero-sites ul {
+        flex-wrap: wrap;
+    }
+
+    .collection-intems {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
