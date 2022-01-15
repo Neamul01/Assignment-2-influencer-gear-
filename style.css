@@ -1,0 +1,55 @@
+/* common styles  */
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+/*---------------------
+ navigation menu 
+--------------------- */
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+}
+
+.site-title {
+    font-size: 24px;
+}
+
+.site-nav {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+
+}
+
+.site-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav ul li {
+    list-style: none;
+    padding: 5px;
+    margin: 5px 10px;
+
+}
+
+.site-nav ul span {
+    margin: 2px 10px;
+}
+
+.site-nav>span {
+    margin: 5px;
+    padding: 5px;
+    margin-left: 20px;
+
+}
